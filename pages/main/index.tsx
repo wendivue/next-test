@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 import Todo from 'components/CardTodo/CardTodo';
-import * as S from './index.styles';
+import * as S from '../../modules/main/index.styles';
 
 const Home = (): JSX.Element => {
   return (
