@@ -32,9 +32,9 @@ const CardTodo = (): JSX.Element => {
     <>
       <S.CardTodo>
         <S.Input ref={textInput} type="text" name="add" />
-        <S.Button type="submit" onClick={handleClickAdd}>
+        <S.CardButton type="submit" onClick={handleClickAdd}>
           Add
-        </S.Button>
+        </S.CardButton>
         <S.List>
           {todos.map((todo, index: number) => (
             <Todo key={index.toString()} index={index} todo={todo} onClick={handleClickRemove} />

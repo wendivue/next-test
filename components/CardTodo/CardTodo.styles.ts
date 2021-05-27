@@ -1,3 +1,4 @@
+import { Button } from 'elements/Button/Button';
 import styled from 'styled-components';
 
 const CardTodo = styled.div`
@@ -29,23 +30,8 @@ const List = styled.ul`
   width: 100%;
 `;
 
-const Button = styled.button`
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 15px;
-  color: #1f2041;
-  position: relative;
-  min-width: 99px;
-  display: inline-block;
-  padding: 12.5px 13.5px;
-  background: linear-gradient(180deg, #bc9cff, #8ba4f9);
-  color: #fff;
-  text-align: center;
-  border: none;
-  border-radius: 22px;
-  box-sizing: border-box;
-  cursor: pointer;
+const CardButton = styled(Button)`
   margin-top: 10px;
 `;
 
-export { Input, CardTodo, List, Button };
+export { Input, CardTodo, List, CardButton };

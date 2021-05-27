@@ -1,3 +1,5 @@
+import { Button } from 'elements/Button/Button';
+
 import * as S from './Todo.styles';
 
 interface todoText {
@@ -15,13 +17,15 @@ const Todo = ({ todo, index, onClick }: TodoProps): JSX.Element => {
     <>
       <S.Todo>
         <S.Text>{todo.text}</S.Text>
-        <S.ButtonRemove
+        <Button
           onClick={() => {
             onClick(index);
           }}
+          isSmall
+          isDelete
         >
           remove
-        </S.ButtonRemove>
+        </Button>
       </S.Todo>
     </>
   );

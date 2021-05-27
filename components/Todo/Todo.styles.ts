@@ -12,14 +12,4 @@ const Text = styled.p`
   font-size: 16px;
 `;
 
-const ButtonRemove = styled.button`
-  display: inline-block;
-  height: 25px;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  text-align: center;
-  background: #ec6767;
-  cursor: pointer;
-`;
-
-export { Todo, Text, ButtonRemove };
+export { Todo, Text };
