@@ -1,8 +1,6 @@
 import Head from 'next/head';
-import { Provider } from 'react-redux';
 
 import Todo from 'components/CardTodo/CardTodo';
-import { store } from '../redux/store';
 import * as S from './index.styles';
 
 const Home = (): JSX.Element => {
@@ -15,9 +13,7 @@ const Home = (): JSX.Element => {
 
       <S.Container>
         <S.ContainerTodo>
-          <Provider store={store}>
-            <Todo />
-          </Provider>
+          <Todo />
         </S.ContainerTodo>
       </S.Container>
     </>

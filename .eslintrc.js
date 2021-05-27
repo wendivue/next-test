@@ -34,5 +34,8 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'import/extensions': ['error', { ts: 'never' }],
     'import/extensions': ['error', 'never', { json: 'always' }],
+    'no-unused-expressions': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    'react/display-name': 'off',
   },
 };
